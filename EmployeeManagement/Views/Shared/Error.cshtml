@@ -1,3 +1,15 @@
-﻿<h3>Exception Details:</h3>
+﻿@if (ViewBag.ErrorTitle==null)
+{
+    <h3>An error occured...</h3>
+}
+else
+{
+    <h1 class="text-danger">@ViewBag.ErrorTitle</h1>
+    <h6 class="text-danger">@ViewBag.ErrorMessage</h6>
+
+
+}
+
+
 
 
